@@ -1,0 +1,51 @@
+@font-face {
+  font-family: tall;
+  src: url('./fonts/DeliriumNcv-Vm5e.ttf');
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+h1 {
+  font-family: tall;
+  margin: 0;
+  font-size: 10rem;
+  color: #cfb6ad;
+  text-align: center;
+  animation: fade-down forwards 1.5s ease-out;
+}
+
+@keyframes fade-down {
+  from {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+}
+
+canvas {
+  margin-top: 50px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
